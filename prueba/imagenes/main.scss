@@ -1,45 +1,55 @@
+$bgColor: rgb(255, 248, 234);
+$mainColor: rgb(158, 118, 118);
+$buttonColor: rgb(129, 91, 91);
+$borderColor: rgb(89, 69, 69);
 
 .lista {
     width: 200px;
     height: 100px;
-    background-color: rgb(213, 186, 236);
-    border: 5px dashed darkblue;
+    background-color: $bgColor;
+    border: 5px dashed $borderColor;
     padding: 25px;
     margin: 50px;
     font-size: medium;
-    color:darkred
+    
 }
 
 .encabezado {
    
     font-family: 'Raleway', sans-serif;
-    color: rgb(207, 165, 247);
+    color: $mainColor;
     width: 25%;
 }
 
+.titulo {
+    font-family: 'Raleway', sans-serif;
+    color: $mainColor;
+}
+
 .nombre {
-    color: blueviolet;
+    color: $mainColor;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
 .item_extra{
-    color: blueviolet;
+    color: $mainColor;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
  
 .enlaces {
     padding: 10px 20px;
-    width: 20vh;
-    background-color:lightskyblue;
+    width: 30vh;
+    background-color:$bgColor;
     border-radius: 10px;
+
 }
 
 .listado {
     width: 30%;
     height: 50%;
-    background-color: aliceblue;
+    background-color: $bgColor;
     border-radius: 20px ;
 
 }
@@ -62,7 +72,7 @@
 
 .barra .barra_menu{
     display: flex;
-    background-color: deepskyblue;
+    background-color: $bgColor;
     padding: 10px;
     padding-left: 10px;
     gap: 10px;
@@ -76,7 +86,7 @@
 .barra {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    color: white;
+    color: $buttonColor;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     text-decoration: none;
@@ -84,33 +94,33 @@
 
 a {
     text-decoration: none;
-    color: blueviolet;
+    color: $mainColor;
 }
 
 
 a:hover{
-    color:crimson
+    color: $mainColor;
 }
 
 .barra .carritouno{
-background-color: lightblue;
+background-color: $bgColor;
 grid-column: 1/2;
 
 }
   
 .barra .basesuno{
-background-color: lightblue;
+background-color: $bgColor;
 grid-column: 2/3;
 }
 
 .barra .labialesuno{
-background-color: lightblue;
+background-color: $bgColor;
 grid-column: 3/4;
 
 }
 
 .barra .ojosuno{ 
-background-color: lightblue;
+background-color: $bgColor;
 grid-column: 4/5;
 
 }
@@ -121,22 +131,22 @@ grid-column: 4/5;
         grid-template-columns: 1fr;
     }
     .barra .carritouno{
-        background-color: lightblue;
+        background-color: $bgColor;
         grid-row: 1/2;
         grid-column: 1;
     }
     .barra .basesuno{
-        background-color: lightblue;
+        background-color: $bgColor;
         grid-row: 2/3;
         grid-column: 1;
     }
     .barra .labialesuno{
-        background-color: lightblue;
+        background-color: $bgColor;
         grid-row: 3/4;
         grid-column: 1;
     }
     .barra .ojosuno{ 
-        background-color: lightblue;
+        background-color: $bgColor;
         grid-row: 4/5;
         grid-column: 1;
     }
@@ -146,23 +156,3 @@ grid-column: 4/5;
     
     
 }
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
